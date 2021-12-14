@@ -1,10 +1,13 @@
 import react from "react";
+import './App.scss'
+import Home from "./components/pages/Home";
+
 
 
 function App() {
   return (
     <div className="App">
-      test
+      <Home />
     </div>
   );
 }
