@@ -1,0 +1,192 @@
+.about-section-container {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    padding: 80px 0;
+
+    .about-section {
+        width: 90%;
+        margin: auto;
+
+        .section-title {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+                font-family: "Oswald", sans-serif;
+                font-size: 45px;
+                color: #505050;
+                font-weight: 500;
+                letter-spacing: 0.8px;
+            }
+
+            img {
+                transform: translateX(-35px);
+                width: 110px;
+                height: auto;
+            }
+        }
+
+        .about-items {
+            display: flex;
+            flex-direction: row;
+            margin-top: 55px;
+
+            .about-img-container {
+                img {
+                    width: 680px;
+                    height: auto;
+                }
+            }
+
+            .about-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 55px;
+
+                p {
+                    color: #555555;
+                    font-size: 21px;
+                    letter-spacing: 0.8px;
+                    line-height: 38px;
+                }
+
+                p:first-child {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+// Media Queries
+@media screen and (min-width: 1921px) {
+    .about-section-container {
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about-section-container {
+        .about-section {
+            .section-title {
+                h2 {
+                    font-size: 40px;
+                }
+
+                img {
+                    transform: translateX(-30px);
+                    width: 100px;
+                }
+            }
+            .about-items {
+                .about-img-container {
+                    img {
+                        width: 540px;
+                    }
+                }
+
+                .about-text {
+                    p {
+                        font-size: 19px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-section-container {
+        .about-section {
+            .section-title {
+                h2 {
+                    font-size: 30px;
+                }
+
+                img {
+                    transform: translateX(-18px);
+                    width: 85px;
+                }
+            }
+            .about-items {
+                min-height: 350px;
+
+                .about-img-container {
+                    margin-top: auto;
+                    margin-bottom: auto;
+
+                    img {
+                        width: 420px;
+                    }
+                }
+
+                .about-text {
+                    p {
+                        font-size: 16px;
+                        line-height: 30px;
+                        letter-spacing: 0.5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section-container {
+        .about-section {
+            .about-items {
+                .about-img-container {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .about-section-container {
+        .about-section {
+            .section-title {
+                h2 {
+                    font-size: 25px;
+                }
+
+                img {
+                    transform: translateX(-12px);
+                    width: 80px;
+                }
+            }
+            .about-items {
+
+                .about-img-container {
+                    img {
+                        
+                        display: none;
+                    }
+                }
+
+                .about-text {
+                    text-align: center;
+                    margin-left: 0;
+                    padding: 0 25px;
+                    p {
+                        font-size: 15px;
+                        line-height: 28px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,7 @@ import Welcome from '../Welcome'
 import '../../App.scss'
 import Navbar from '../Navbar'
 import HeroSection from '../HeroSection'
+import About from '../About'
 
 function Home() {
     return (
@@ -10,6 +11,7 @@ function Home() {
         <Welcome />
         <Navbar />
         <HeroSection />
+        <About />
             
         </>
     )
