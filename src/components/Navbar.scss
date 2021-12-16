@@ -1,5 +1,4 @@
 .navbar-container {
-    background-color: lightcoral;
     font-family: "Open Sans", sans-serif;
 
     .navbar-items {
@@ -52,6 +51,14 @@
     color: #0872b9;
 }
 // Media Quesries
+@media screen and (min-width: 1921px) {
+    .navbar-container{
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .navbar-container {
         height: auto;
@@ -90,7 +97,14 @@
 
         .nav-items-container-mobile {
             display: block;
-            background-color: lightcoral;
+            position: absolute;
+            background-color: #fff;
+            width: 100vw;
+            transform: translateX(-16px);
+            // position: fixed;
+            // top: 0;
+            height: auto;
+            padding-bottom: 35px;
 
             ul {
                 display: flex;
@@ -98,8 +112,10 @@
                 text-align: center;
                 align-items: center;
 
+
                 li {
                     list-style: none;
+                    
                 }
 
                 li:first-child {

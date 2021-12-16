@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import HeroSection from "./HeroSection";
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -30,7 +31,7 @@ function Navbar() {
                 >
                     <ul>
                         <li>
-                            <Link to="/" className="nav-item">
+                            <Link to={<HeroSection />} className="nav-item">
                                 Home
                             </Link>
                         </li>
