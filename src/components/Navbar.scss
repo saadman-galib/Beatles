@@ -67,9 +67,11 @@
             height: auto;
             position: relative;
             display: block;
+            width: 100%;
 
             .logo {
-                width: 100%;
+                width: 90%;
+                margin: auto;
             }
 
             .menu-icon {
@@ -79,6 +81,7 @@
                 right: 0;
                 top: 35px;
                 cursor: pointer;
+                margin-right: 5%;
 
                 i {
                     font-size: 30px;
@@ -99,8 +102,9 @@
             display: block;
             position: absolute;
             background-color: #fff;
-            width: 100vw;
-            transform: translateX(-16px);
+            width: 100%;
+            margin: 0;
+            // transform: translateX(-5%);
             // position: fixed;
             // top: 0;
             height: auto;
